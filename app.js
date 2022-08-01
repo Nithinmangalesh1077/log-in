@@ -160,7 +160,7 @@ app.post('/api/login',async(req,res)=>{
 
                 if(doMatch){
 
-                    const token=jwt.sign({id:email},JWT_KEY,
+                    const token=jwt.sign({id:email,role:role},JWT_KEY,
 
                         {
 
